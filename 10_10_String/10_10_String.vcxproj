@@ -186,6 +186,7 @@
     <ClCompile Include="CString.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="10_10_String.h" />
     <ClInclude Include="CString.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

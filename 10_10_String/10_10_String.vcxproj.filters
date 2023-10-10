@@ -26,5 +26,8 @@
     <ClInclude Include="CString.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="10_10_String.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
