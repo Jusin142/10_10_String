@@ -9,8 +9,10 @@ public:
 	CString():len(0),cName(nullptr) {};
 
 	CString(const char* _Name)
-	{
-		cName = const_cast<char*>(_Name);
+	{len=strlen(_Name)+1;
+	 cName=new char[len];
+	 cName=_Name;
+		//cName = const_cast<char*>(_Name);
 
 	}
 
@@ -23,7 +25,7 @@ public:
 
 	~CString()
 	{
-		cout << "¼Ò¸êÀÚ" << endl;
+		cout << "Â¼Ã’Â¸ÃªÃ€Ãš" << endl;
 	};
 
 	CString& operator=(const CString& _Name)
