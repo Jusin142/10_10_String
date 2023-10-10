@@ -37,13 +37,15 @@ public:
 	CString& operator=(const CString& _Name)
 	{
 		//cName = _Name.cName;
+		len = strlen(_Name.cName) + 1;
+		cName = new char[len];
 		strcpy_s(cName, sizeof(cName) / sizeof(char), _Name.cName);
 		return *this;
 
 	}
 	CString& operator=(const char* _Name)
 	{
-		int len = strlen(_Name) + 1;
+		len = strlen(_Name) + 1;
 		cName = new char[len];
 		strcpy_s(cName, sizeof(cName),_Name);
 		return *this;
