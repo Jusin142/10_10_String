@@ -30,6 +30,7 @@ public:
 		{
 			delete[]cName;
 			cName = nullptr;
+			len = 0;
 		}
 		//cout <<"소멸자" << endl;
 	}
