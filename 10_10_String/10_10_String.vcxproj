@@ -183,6 +183,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="10_10_String.cpp" />
+    <ClCompile Include="CString.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CString.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
