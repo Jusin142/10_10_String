@@ -26,12 +26,7 @@ public:
 
 	~CString()
 	{
-		if (cName != nullptr)
-		{
-			delete[]cName;
-			cName = nullptr;
-			len = 0;
-		}
+		
 		//cout <<"소멸자" << endl;
 	}
 
@@ -48,7 +43,9 @@ public:
 	{
 		len = strlen(_Name) + 1;
 		cName = new char[len];
-		strcpy_s(cName, sizeof(cName),_Name);
+		cName = const_cast<char*> (_Name);
+		//strcpy_s(cName, sizeof(cName),_Name);
+		
 		return *this;
 	}
 

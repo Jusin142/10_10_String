@@ -13,6 +13,8 @@ int main()
 
 	test = "333";
 	name = test;
+	//test = "444";
+	name = "ppppp";
 	
 
 	cout << name << endl;
