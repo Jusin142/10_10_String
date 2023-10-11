@@ -12,6 +12,7 @@ int main()
 	CString test = "22";
 	CString car = test;
 	CString Man(name);
+	CString Girl("asd");
 
 	test = "333";
 	name = test;
@@ -20,6 +21,7 @@ int main()
 	//test = "444";
 	name = "ppppp";
 	
+	cout << Girl << endl;
 	cout << Man << endl;
 	cout << car << endl;
 	cout << name << endl;
