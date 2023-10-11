@@ -21,7 +21,7 @@ public:
 	{
 		len = rCopy.len;
 		cName = new char[len];
-		strcpy_s(cName, sizeof(cName)/sizeof(char), rCopy.cName);
+		strcpy_s(cName, len, rCopy.cName);
 	}
 
 	~CString()
@@ -35,7 +35,7 @@ public:
 		//cName = _Name.cName;
 		len = strlen(_Name.cName) + 1;
 		cName = new char[len];
-		strcpy_s(cName, sizeof(cName) / sizeof(char), _Name.cName);
+		strcpy_s(cName, len, _Name.cName);
 		return *this;
 
 	}
@@ -43,8 +43,8 @@ public:
 	{
 		len = strlen(_Name) + 1;
 		cName = new char[len];
-		cName = const_cast<char*> (_Name);
-		//strcpy_s(cName, sizeof(cName),_Name);
+		//cName = const_cast<char*> (_Name);
+		strcpy_s(cName, len,_Name);
 		
 		return *this;
 	}
